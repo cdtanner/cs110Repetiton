@@ -1,0 +1,46 @@
+--- Begin Table.java ---
+1:	/**
+2:	 * @(#)Table.java
+3:	 * @CS 110 Sample Program
+4:	 * @9-28-08
+5:	 * @Produces a Multiplication Table
+6:	 */
+7:	
+8:	import java.util.Scanner;
+9:	
+10:	public class Table 
+11:	{
+12:	 public static void main (String[] args) 
+13:	 {
+14:	  int seed;
+15:	  int column = 0;
+16:	  Scanner sc = new Scanner(System.in);
+17:	  
+18:	  System.out.println("Generate a multiplication table for");
+19:	  System.out.print(" the numbers 1 to ?");
+20:	  seed = sc.nextInt();
+21:	  
+22:	  System.out.println("Multiplication table for 1 - " + seed);
+23:	  System.out.print("      ");
+24:	  for (int i = 1; i <= seed; i++)
+25:	  {
+26:	   System.out.printf("%6d", i);
+27:	  }
+28:	  System.out.println();
+29:	  for (int i = 1; i <= seed; i++)
+30:	  {
+31:	   System.out.printf("%6d", i);
+32:	   for (int j = 1; j <= seed; j++)
+33:	   {
+34:	    System.out.printf("%6d", i*j);
+35:	   }
+36:	  System.out.println(); 
+37:	  }
+38:	  System.out.println("LEARN YOUR TABLES!");
+39:	 }   
+
+Compilation Successful.
+
+--- End Table.java ---
+
+
